@@ -26,8 +26,3 @@ public partial class Default2 : System.Web.UI.Page
 
     }
 }
-
-public class EventDetails
-{
-    public string Title { get; set; }
-}
