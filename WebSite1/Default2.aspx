@@ -11,16 +11,46 @@
         <div>
             Title :<asp:TextBox ID="txtTitle" runat="server"></asp:TextBox>
             <br />
-            <asp:Button ID="btnSubmit" runat="server" Text="submit" OnClick="btnSubmit_Click" />
+            
         </div>
 
         <div>
             <h3>
                 <asp:Label ID="lblTitle" runat="server" Text="--title--"></asp:Label>
                 Total Recall: Rebooting our Development Approach</h3>
-            <p>In this presentation you will learn how we are moving from siloed applications to a flexible architecture by refining our development approach. We will cover how we use tools like NuGet, Git, MVC/Web API, and others to help us deliver quality software. If you're currently in an environment that needs a nudge in the right direction, come learn from our experiences and share back to your teams.</p>
-            <h3>Brad Curry</h3>
-            <p>Brad leads the Core Development team at INTL FCStone. His team's focus is to create, deliver, and maintain core development platforms that support systems across the enterprise. When not at work, Brad enjoys spending time with his family and blowing up Titans on Titanfall (XBOX One).</p>
+        </div>
+        <div>
+            Abstract :<asp:TextBox id="txtAbstract" TextMode="multiline" Columns="50" Rows="5" runat="server" /><br />
+<%--            <asp:Button ID="btnSubmit2" runat="server" Text="submit" OnClick="btnSubmit_Click" />--%>
+        </div>
+
+        <div>
+            <p>
+                <asp:Label ID="lblAbstract" runat="server" Text="--abstract--"></asp:Label>
+            In this presentation you will learn how we are moving from siloed applications to a flexible architecture by refining our development approach. We will cover how we use tools like NuGet, Git, MVC/Web API, and others to help us deliver quality software. If you're currently in an environment that needs a nudge in the right direction, come learn from our experiences and share back to your teams.</p>
+           
+            <div>
+            Presenter Name :<asp:TextBox ID="txtPresenter" runat="server"></asp:TextBox>
+            <br />
+<%--            <asp:Button ID="btnSubmit3" runat="server" Text="submit" OnClick="btnSubmit_Click" />--%>
+        </div>
+
+        <div>
+            <h3>
+                <asp:Label ID="lblPresenter" runat="server" Text="--presenter--"></asp:Label>
+             Brad Curry</h3>
+            </div>
+        <div>
+            Presenter Bio :<asp:TextBox id="txtBio" TextMode="multiline" Columns="50" Rows="5" runat="server" /><br />
+                          <asp:Button ID="btnSubmit" runat="server" Text="submit" OnClick="btnSubmit_Click" />
+
+        </div>
+        <div>
+             <p>
+                <asp:Label ID="lblBio" runat="server" Text="--bio--"></asp:Label>
+                Brad leads the Core Development team at INTL FCStone. His team's focus is to create, deliver, and maintain core development platforms that support systems across the enterprise. When not at work, Brad enjoys spending time with his family and blowing up Titans on Titanfall (XBOX One).</p>
+        </div>
+           
             <h3>Meeting Location INTL FCStone</h3>
             <h3>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2983.7190187055053!2d-93.74297!3d41.596961!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ee9e209a43934b%3A0x2e16d7d556c1e833!2s2829+Westown+Pkwy!5e0!3m2!1sen!2sus!4v1399849157061" width="600" height="450" frameborder="0" style="border: 0;"></iframe>

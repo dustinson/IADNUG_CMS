@@ -15,6 +15,9 @@ public partial class Default2 : System.Web.UI.Page
     private void updateUi(EventDetails eventDetails)
     {
         lblTitle.Text = eventDetails.Title;
+        lblAbstract.Text = eventDetails.Abstract;
+        lblPresenter.Text = eventDetails.Presenter;
+        lblBio.Text = eventDetails.Bio;
 
     }
 
@@ -22,7 +25,10 @@ public partial class Default2 : System.Web.UI.Page
     {
         var eventDetails = new EventDetails();
         eventDetails.Title = txtTitle.Text;
+        eventDetails.Abstract = txtAbstract.Text;
+        eventDetails.Presenter = txtPresenter.Text;
+        eventDetails.Bio = txtBio.Text;
         return eventDetails;
 
-    }
+    }    
 }
